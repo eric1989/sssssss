@@ -1,0 +1,13 @@
+<html>
+	{% if img %}
+	{% include 'blog/image.html' %}
+	<form enctype="multipart/form-data" action="/blog/rating/" method="post">
+        {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="hidden" name="imgID" value="{{img.id}}">
+            <input type="submit" value="Sumbit rating">
+        </form>
+   	{% endif %}
+</html>

@@ -1,0 +1,7 @@
+<div>
+	<p>{{img.title}}</p>
+	<a href="{% url 'image' 'detail' img.id %}">
+		<img src="{% url 'image' 'get' img.id %}" width="{{img.img_width}}" height="{{img.img_height}}"></img>
+	</a>
+	<p>Total rating: {{img.total_rating}}</p>
+</div>
