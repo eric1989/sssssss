@@ -5,7 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 from config.settings import DBNAME
 
 connect(DBNAME)
-# Create your models here.
 
 USERNAME_REGEX = r'[\w.@+-]+'
 CONFIRMATION_TOKEN_VALIDITY = 5 # days
