@@ -72,6 +72,9 @@ DATABASES = {
 AUTHENTICATION_BACKENDS = (
     'mongoengine.django.auth.MongoEngineBackend',
 )
+
+SESSION_ENGINE = 'mongoengine.django.sessions'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
